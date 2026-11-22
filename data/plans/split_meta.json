@@ -1,0 +1,35 @@
+{
+  "manifest": "../data/plans/manifest_vww_train.csv",
+  "seed": 0,
+  "val_frac_target": 0.15,
+  "val_frac_actual": 0.153,
+  "videos": 9626,
+  "videos_with_location": 9559,
+  "videos_without_location": 67,
+  "location_groups": 605,
+  "fallback_video_groups": 67,
+  "largest_group_frames": 3234,
+  "train": {
+    "videos": 8258,
+    "frames": 58082,
+    "present": 34738,
+    "empty": 23344,
+    "present_pct": 59.81
+  },
+  "val": {
+    "videos": 1368,
+    "frames": 10488,
+    "present": 6497,
+    "empty": 3991,
+    "present_pct": 61.95
+  },
+  "checks": {
+    "no video in both splits": true,
+    "no location group in both splits": true,
+    "excluded videos absent": true,
+    "no duplicate paths": true,
+    "labels only 0/1": true,
+    "rows conserved (train + val == manifest)": true,
+    "every split path came from the manifest": true
+  }
+}

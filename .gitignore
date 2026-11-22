@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/hf_sa_fari/
+data/google_sa_fari/
+data/vww96/
+data/vww128/
+/locations/
+/analysis/
+logs/test.jpg
+make_ai_paper_kit.py
+checkpoints/*/epochs/
+/checkpoints/*.h5
+/logs/download_*.log
+/logs/diag_baseline_*.csv
+/REPRO_AUDIT.md

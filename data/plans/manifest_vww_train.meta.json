@@ -1,0 +1,28 @@
+{
+  "source": "../data/plans/manifest_train_download_plan.csv",
+  "output": "../data/plans/manifest_vww_train.csv",
+  "rule": "animal bbox area > 0.025 of frame; small-only frames: drop",
+  "threshold": 0.025,
+  "policy": "drop",
+  "excluded_videos": [
+    "sa_fari_005269",
+    "sa_fari_006464"
+  ],
+  "source_rows": 98506,
+  "excluded_rows": 14,
+  "dropped_small": 29922,
+  "flipped_1_to_0": 0,
+  "rows": 68570,
+  "present": 41235,
+  "empty": 27335,
+  "present_pct": 60.14,
+  "checks": {
+    "manifest labels agree with annotation": true,
+    "no duplicate paths": true,
+    "every path came from the source manifest": true,
+    "rows conserved (written + excluded + dropped == source)": true,
+    "excluded videos absent": true,
+    "labels only 0/1": true,
+    "no empty frame became animal": true
+  }
+}

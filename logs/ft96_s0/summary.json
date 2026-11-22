@@ -1,0 +1,117 @@
+{
+  "run_name": "ft96_s0",
+  "image_size": 96,
+  "init": "code/third_party/mlperf_tiny/benchmark/training/visual_wake_words/trained_models/vww_96.h5",
+  "seed": 0,
+  "schedule": [
+    [
+      20,
+      0.001
+    ],
+    [
+      10,
+      0.0005
+    ],
+    [
+      20,
+      0.00025
+    ]
+  ],
+  "train_minutes": 106.3,
+  "epochs": 50,
+  "selection": {
+    "metric": "balanced_accuracy",
+    "on": "clean val (no augmentation)",
+    "best_epoch": 13,
+    "best_value": 0.7579145774622114
+  },
+  "models": {
+    "best": "/home/kitcovid-0738/safari/checkpoints/ft96_s0/best.h5",
+    "last": "/home/kitcovid-0738/safari/checkpoints/ft96_s0/last.h5",
+    "epochs_dir": "/home/kitcovid-0738/safari/checkpoints/ft96_s0/epochs"
+  },
+  "val_threshold": {
+    "best": 0.62,
+    "last": 0.9
+  },
+  "metrics": {
+    "best": {
+      "val": {
+        "accuracy": 0.7701182303585049,
+        "balanced_accuracy": 0.7579145774622114,
+        "auc": 0.8235882397700506,
+        "recall_animal": 0.8089887640449438,
+        "recall_empty": 0.7068403908794788,
+        "precision_animal": 0.8179271708683473,
+        "f1_animal": 0.8134334132941268
+      },
+      "val_at_val_threshold": {
+        "accuracy": 0.764397406559878,
+        "balanced_accuracy": 0.7646530343573179,
+        "auc": 0.8235882397700506,
+        "recall_animal": 0.7635831922425735,
+        "recall_empty": 0.7657228764720622,
+        "precision_animal": 0.8414179104477612,
+        "f1_animal": 0.8006132494149923
+      },
+      "test": {
+        "accuracy": 0.7117170519660146,
+        "balanced_accuracy": 0.7112135294504482,
+        "auc": 0.7905705016393545,
+        "recall_animal": 0.7013744273219492,
+        "recall_empty": 0.7210526315789474,
+        "precision_animal": 0.6941467436108821,
+        "f1_animal": 0.6977418686554795
+      },
+      "test_at_val_threshold": {
+        "accuracy": 0.7304880458407429,
+        "balanced_accuracy": 0.7242651088362305,
+        "auc": 0.7905705016393545,
+        "recall_animal": 0.6026655560183257,
+        "recall_empty": 0.8458646616541353,
+        "precision_animal": 0.7792137856758212,
+        "f1_animal": 0.6796618130577736
+      }
+    },
+    "last": {
+      "val": {
+        "accuracy": 0.7418954996186118,
+        "balanced_accuracy": 0.7142591725641583,
+        "auc": 0.8170481667482788,
+        "recall_animal": 0.8299215022317993,
+        "recall_empty": 0.5985968428965172,
+        "precision_animal": 0.7709465255933657,
+        "f1_animal": 0.7993477132903417
+      },
+      "val_at_val_threshold": {
+        "accuracy": 0.7340770404271548,
+        "balanced_accuracy": 0.7545805405551749,
+        "auc": 0.8170481667482788,
+        "recall_animal": 0.6687702016315222,
+        "recall_empty": 0.8403908794788274,
+        "precision_animal": 0.87213970293055,
+        "f1_animal": 0.7570345848941546
+      },
+      "test": {
+        "accuracy": 0.7190278601066983,
+        "balanced_accuracy": 0.7199933141892632,
+        "auc": 0.79774169910407,
+        "recall_animal": 0.7388588088296543,
+        "recall_empty": 0.7011278195488722,
+        "precision_animal": 0.690541066562865,
+        "f1_animal": 0.7138832997987928
+      },
+      "test_at_val_threshold": {
+        "accuracy": 0.7170519660146216,
+        "balanced_accuracy": 0.7069411867862074,
+        "auc": 0.79774169910407,
+        "recall_animal": 0.5093710953769263,
+        "recall_empty": 0.9045112781954887,
+        "precision_animal": 0.8280297901150981,
+        "f1_animal": 0.630737493553378
+      }
+    }
+  },
+  "run_dir": "/home/kitcovid-0738/safari/logs/ft96_s0",
+  "finished": "2026-11-03T13:39:34"
+}

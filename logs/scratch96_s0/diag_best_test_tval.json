@@ -1,0 +1,151 @@
+{
+  "name": "scratch96_s0-best_test_tval",
+  "manifest": "/home/kitcovid-0738/safari/logs/scratch96_s0/data/test.csv",
+  "threshold": 0.57,
+  "image_size": 96,
+  "overall": {
+    "n": 5061,
+    "accuracy": 0.651057103339261,
+    "balanced_accuracy": 0.6455785966373659,
+    "recall_animal": 0.5385256143273636,
+    "recall_empty": 0.7526315789473684,
+    "precision_animal": 0.6627370579190159,
+    "f1_animal": 0.5942095588235293,
+    "auc": 0.6958345989922745,
+    "tp": 1293,
+    "tn": 2002,
+    "fp": 658,
+    "fn": 1108
+  },
+  "by_size": {
+    "2.5-5%": {
+      "n": 782,
+      "recall_animal": 0.41815856777493604
+    },
+    "5-10%": {
+      "n": 769,
+      "recall_animal": 0.4980494148244473
+    },
+    "10-20%": {
+      "n": 447,
+      "recall_animal": 0.6062639821029083
+    },
+    ">=20%": {
+      "n": 403,
+      "recall_animal": 0.7741935483870968
+    }
+  },
+  "by_light": {
+    "color": {
+      "n": 3191,
+      "accuracy": 0.6740833594484488,
+      "balanced_accuracy": 0.6729094703087606,
+      "recall_animal": 0.6115015974440895,
+      "recall_empty": 0.7343173431734318,
+      "precision_animal": 0.6889848812095032,
+      "f1_animal": 0.6479350033852403,
+      "auc": 0.7222526123024808,
+      "tp": 957,
+      "tn": 1194,
+      "fp": 432,
+      "fn": 608
+    },
+    "ir_gray": {
+      "n": 1870,
+      "accuracy": 0.611764705882353,
+      "balanced_accuracy": 0.591672605110455,
+      "recall_animal": 0.4019138755980861,
+      "recall_empty": 0.781431334622824,
+      "precision_animal": 0.597864768683274,
+      "f1_animal": 0.48068669527896996,
+      "auc": 0.6515888036426568,
+      "tp": 336,
+      "tn": 808,
+      "fp": 226,
+      "fn": 500
+    }
+  },
+  "cameras": {
+    "count": 63,
+    "error_rate_median": 0.3701657458563536,
+    "worst": [
+      {
+        "camera": "loc:R050",
+        "n": 26,
+        "error_rate": 0.9230769230769231,
+        "animal_pct": 0.9615384615384616
+      },
+      {
+        "camera": "loc:SHINTUYA_5_Terrestrial",
+        "n": 48,
+        "error_rate": 0.7708333333333334,
+        "animal_pct": 0.22916666666666666
+      },
+      {
+        "camera": "loc:MS#62_sorted",
+        "n": 26,
+        "error_rate": 0.7307692307692307,
+        "animal_pct": 0.46153846153846156
+      },
+      {
+        "camera": "loc:MS#157_sorted",
+        "n": 67,
+        "error_rate": 0.7014925373134329,
+        "animal_pct": 0.47761194029850745
+      },
+      {
+        "camera": "loc:MLC_8_Arboreal",
+        "n": 39,
+        "error_rate": 0.6666666666666666,
+        "animal_pct": 0.28205128205128205
+      },
+      {
+        "camera": "loc:barbs8",
+        "n": 22,
+        "error_rate": 0.6363636363636364,
+        "animal_pct": 0.36363636363636365
+      },
+      {
+        "camera": "loc:MS#126_sorted",
+        "n": 20,
+        "error_rate": 0.6,
+        "animal_pct": 0.2
+      },
+      {
+        "camera": "loc:MS#147_sorted",
+        "n": 90,
+        "error_rate": 0.5777777777777777,
+        "animal_pct": 0.4888888888888889
+      },
+      {
+        "camera": "loc:DIAMANTE_12_Arboreal",
+        "n": 76,
+        "error_rate": 0.5657894736842105,
+        "animal_pct": 0.6052631578947368
+      },
+      {
+        "camera": "loc:SHINTUYA_15_Arboreal",
+        "n": 39,
+        "error_rate": 0.5641025641025641,
+        "animal_pct": 0.7692307692307693
+      }
+    ]
+  },
+  "best_threshold": {
+    "threshold": 0.61,
+    "n": 5061,
+    "accuracy": 0.6567871962062833,
+    "balanced_accuracy": 0.6497320195532563,
+    "recall_animal": 0.5118700541441066,
+    "recall_empty": 0.7875939849624061,
+    "precision_animal": 0.6850613154960981,
+    "f1_animal": 0.5859356376638856,
+    "auc": 0.6958345989922745,
+    "tp": 1229,
+    "tn": 2095,
+    "fp": 565,
+    "fn": 1172
+  },
+  "pred_animal_pct": 0.3854969373641573,
+  "true_animal_pct": 0.47441217150760717
+}

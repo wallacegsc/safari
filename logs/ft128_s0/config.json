@@ -1,0 +1,52 @@
+{
+  "run_name": "ft128_s0",
+  "train_csv": "/home/kitcovid-0738/safari/data/plans/split_train.csv",
+  "val_csv": "/home/kitcovid-0738/safari/data/plans/split_val.csv",
+  "test_csv": "/home/kitcovid-0738/safari/data/plans/manifest_vww_test.csv",
+  "image_size": 128,
+  "train_images": "/home/kitcovid-0738/safari/data/vww128/sa_fari_train",
+  "test_images": "/home/kitcovid-0738/safari/data/vww128/sa_fari_test",
+  "ann_train": "/home/kitcovid-0738/safari/data/hf_sa_fari/annotation/sa_fari_train.json",
+  "ann_test": "/home/kitcovid-0738/safari/data/hf_sa_fari/annotation/sa_fari_test.json",
+  "mlperf_dir": "/home/kitcovid-0738/safari/code/third_party/mlperf_tiny/benchmark/training/visual_wake_words",
+  "init": "code/third_party/mlperf_tiny/benchmark/training/visual_wake_words/trained_models/vww_96.h5",
+  "schedule": "20:0.001,10:0.0005,20:0.00025",
+  "seed": 0,
+  "deterministic": true,
+  "smoke": false,
+  "limit_train": null,
+  "limit_val": null,
+  "limit_test": null,
+  "select": "balanced_accuracy",
+  "epoch_checkpoints": true,
+  "save_stages": false,
+  "fit_verbose": null,
+  "logs_dir": "/home/kitcovid-0738/safari/logs",
+  "ckpt_dir": "/home/kitcovid-0738/safari/checkpoints",
+  "stages": [
+    [
+      20,
+      0.001
+    ],
+    [
+      10,
+      0.0005
+    ],
+    [
+      20,
+      0.00025
+    ]
+  ],
+  "batch_size": 32,
+  "mlperf_train_vww": "/home/kitcovid-0738/safari/code/third_party/mlperf_tiny/benchmark/training/visual_wake_words/train_vww.py",
+  "tensorflow": "2.21.0",
+  "gpus": [
+    "/physical_device:GPU:0"
+  ],
+  "frames": {
+    "train": 58082,
+    "val": 10488,
+    "test": 5061
+  },
+  "started": "2026-11-03T13:53:19"
+}
